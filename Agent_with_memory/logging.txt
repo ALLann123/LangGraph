@@ -1,0 +1,10 @@
+Your Conversation Log:
+You: Hi
+AI: It's nice to meet you. Is there something I can help you with or would you like to chat?
+
+You: I am Allan, I am 21 from Kenya
+AI: Nice to meet you, Allan! Welcome from Kenya! It's great to have you here. How's life treating you in Kenya? What are your interests or hobbies? I'm all ears and would love to get to know you better!
+
+You: Do you know who is the president of Kenya?
+AI: The current President of Kenya is William Ruto. He was sworn into office on September 13, 2022, after winning the presidential election. Prior to his presidency, he served as the Deputy President of Kenya from 2013 to 2022, under President Uhuru Kenyatta. Are you following Kenyan politics, Allan?
+
