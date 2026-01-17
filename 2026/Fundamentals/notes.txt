@@ -1,0 +1,72 @@
+=========Type Annotations========
+Dictionary: Are data structures in python
+Examp:
+     movie={"name":"Avengers", "year":2018}
+- Allows for efficient data retrieval based on unique keys
+- Flexible and easy to implement
+PROB: 1. Leads to challenges in ensuring data is a particular structure
+especially in large projects
+      2. DOesn't check if the data is correct type or structure.
+SOL:
+    ===Type Dictionary=====
+- Used extensively in langgraph and used in graph states.
+------------Example------------------
+from typing import TypedDict
+
+class Movie(TypedDict):
+    name : str
+    year : int
+movie={"name":"Avengers", "year":2018}
+--------------------------------------
+Type Safety- We defined explicitly what the data structures are,
+reducing runtime errors.
+Enhanced Readability- Makes debugging easier and makes code more
+understadable
+
+========Union=========
+- Union lets you say that a value can be more than one type
+-----------Example------------------------
+from typing import Union
+
+def square(x: Union[int, float]) -> float:
+    return x*x
+
+x=5     #this is fine because it is an integer
+x=1.234     #also fine it is a float
+-------------------------------------------
+- Flexible and easy code
+- Type safety as it provide hints to help catch incorrect usage
+NOTE: Makers of langchain and langgraph used it in building the
+framework
+
+======Optional========
+- In this case the variable can either be a string or None!
+--------------------------------------------------
+from typing import Optional
+
+def nice_message(name: Optional[str]) -> None:
+    if name is None:
+        print("Hey random person!")
+    else:
+        print(f"Hi, there, {name}")
+--------------------------------------------------
+- The variable "cannot" be anything else!!
+
+===========Any============
+- Means the variable can be any data structure.
+----------------------------------
+from typing import Any
+
+def print_value(x: Any):
+    print(x)
+
+print_value("WHo Am I?")
+----------------------------------
+
+=========Lambda FUnctions=========
+- One liner functions. 
+---------------------------------
+square = lambda x: x * x
+square(10)
+----------------------------------
+- Shortcut to writing small functions.
